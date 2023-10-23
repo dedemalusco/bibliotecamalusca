@@ -1,0 +1,185 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+        background-color: #000; /* Cor de fundo preto */
+        color: #fff; /* Cor do texto em branco */
+        font-family: Arial, sans-serif; /* Escolha uma fonte apropriada */
+
+}
+
+.menu {
+    margin: 20px;
+}
+
+.menu button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.menu button:hover {
+    background-color: #555;
+}
+
+.search {
+    margin: 20px;
+}
+
+.search input[type="text"] {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.search button:hover {
+    background-color: #555;
+}
+
+.add-book, .borrow-book {
+    margin: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.add-book label, .borrow-book label {
+    display: block;
+    margin: 10px 0;
+    font-size: 18px;
+    color: black; /* Defina a cor do texto como preta */
+
+}
+
+.add-book input[type="text"],
+.add-book input[type="number"],
+.add-book input[type="date"],
+.add-book select,
+.borrow-book input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+.add-book button, .borrow-book button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.add-book button:hover, .borrow-book button:hover {
+    background-color: #555;
+}
+#newBookButton {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    
+}
+
+#newBookButton:hover {
+    background-color: #45a049;
+}
+#booksContainer {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin: 20px;
+    font-size: 18px;
+    color: black; /* Defina a cor do texto como preta */
+}
+
+#booksContainer p {
+    font-size: 18px;
+    margin: 10px 0;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+#resultDiv {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin: 20px;
+    font-family: Arial, sans-serif; /* Escolha uma fonte apropriada */
+    font-size: 18px;
+    color: black; /* Defina a cor do texto como preta */
+    display: none;
+}
+
+#resultDiv p {
+    font-size: 18px;
+    margin: 10px 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    display: none;
+}
+header {
+    background-image: url('eu.jpg');
+    background-size: cover; /* Preencher todo o cabeçalho */
+    height: 30px; /* Defina a altura do cabeçalho conforme necessário */
+    color: #fff; /* Cor do texto no cabeçalho */
+}
+
+/* Redimensione a imagem no cabeçalho */
+header img {
+    width: 100%; /* 100% da largura do contêiner (cabeçalho) */
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+}
+
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/dede.css">
+    <title>Biblioteca</title>
+</head>
+<body>
+        <h1>Biblioteca Malusca</h1>
+        <img src="jpg/eu.jpg" alt="Imagem do cabeçalho">
+    <div class="menu">
+        <button onclick="deleteBook(/*índice do livro a ser excluído*/)">Excluir Livro</button>
+        <button onclick="showAvailableBooks()">Livros Disponíveis</button>
+        <button onclick="showBorrowedBooks()">Livros Emprestados</button>
+    </div>
+
+    <div class="search">
+        <input type="text" id="searchInput" placeholder="Pesquisar livro">
+        <button id="searchButton" onclick="searchBooks()">Pesquisar</button>
+    </div>
+    
+    <button id="newBookButton">Novo Livro</button>
+    <button id="selectBooksButton" onclick="selectBooksForDeletion()" style="display: none;">Selecionar Livros</button>
+    <div id="addBookForm" style="display: none;">
+        <div class="add-book">
+            <label for="title">Título:</label>
+            <input type="text" id="title" required>
+            <label for="quantity">Quantidade:</label>
+            <input type="number" id="quantity" min="0" max="100" required>
+            <label for="borrowerName">Nome do Destinatário:</label>
+            <input type="text" id="borrowerName" placeholder="Nome do Destinatário">
+            <label for="dueDate">Data de Devolução:</label>
+            <input type="date" id="dueDate">
+            <label for="bookStatus">Status do Livro:</label>
+            <select id="bookStatus" required>
+                <option value="disponivel">Disponível</option>
+                <option value="emprestado">Emprestado</option>
+            </select>
+            <button onclick="addOrUpdateBook()">Adicionar/Atualizar Livro</button>
+        </div>
+    </div>   
+    <div>
+        <span id="closeButton" onclick="toggleResultDiv()"></span>
+        <div id="resultDiv"></div>
+    </div>
+
+
+
+    <div id="booksContainer">
+    </div>
+
+    <button class="save-changes" onclick="saveChanges()" style="display: none;">Salvar Alterações</button>
+    <button class="borrow-book" onclick="borrowSelectedBook()" style="display: none;">Emprestar Livro</button>
+    <button id="deleteBookButton" onclick="showDeleteBooks()" style="display: none;"></button>
+    <button id="deleteSelectedButton" style="display: none;" onclick="deleteSelectedBooks()">Excluir Selecionados</button>
+
+
+    <script src="js/malusco.js"></script>
+</body>
+</html>
