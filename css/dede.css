@@ -155,10 +155,12 @@ header {
     color: #fff; /* Cor do texto no cabeçalho */
 }
 
-/* Redimensione a imagem no cabeçalho */
 header img {
     width: 100%; /* 100% da largura do contêiner (cabeçalho) */
+    height: auto; /* Altura automática para manter a proporção da imagem */
+    max-width: 1201px; /* Define a largura máxima da imagem para 1201 pixels */
 }
+
 .modal {
     display: none;
     position: fixed;
